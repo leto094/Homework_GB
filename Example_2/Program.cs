@@ -1,21 +1,24 @@
-﻿int a = 5;
-int b = 7;
+﻿Console.WriteLine("Введите число a");
+int a = Int32.Parse(Console.ReadLine());
 
-int max = a;
+Console.WriteLine("Введите число b");
+int b = Int32.Parse(Console.ReadLine());
 
-if (a > max) max = a;
+if (a > b) 
 {
-    Console.Write("max = a");
-}
+    Console.Write("max = ");
+    Console.Write(a);
 
+    Console.Write(" min = ");
+    Console.Write(b);
+
+} 
 else
 {
-    
-} (b < max) min = b;
-{
-    Console.Write("min = b");
+    Console.Write("max = ");
+    Console.Write(b);
+
+    Console.Write(" min = ");
+    Console.Write(a);
+
 }
-
-Console.WriteLine(max);
-
-Console.WriteLine(min);
