@@ -1,6 +1,11 @@
-﻿int a = 2;
-int b = 3;
-int c = 7;
+﻿Console.WriteLine("Введите число a");
+int a = Int32.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число b");
+int b = Int32.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число c");
+int c = Int32.Parse(Console.ReadLine());
 
 int max = a;
 
