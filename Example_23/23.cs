@@ -7,7 +7,7 @@ int index = 1;
 
 while (index <= n)
 {
-    Console.Write(Math.Pow(index, 2));
+    Console.Write(Math.Pow(index, 3));
     if (index != n) 
     {
         Console.Write(", ");
