@@ -3,6 +3,7 @@
 Console.WriteLine("Введите цифру, обозначающую день недели");
 int n = Int32.Parse(Console.ReadLine());
 
+
 if ((5 < n) && (n < 8))
 {
     Console.WriteLine("Это выходной");
