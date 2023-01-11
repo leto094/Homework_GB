@@ -37,7 +37,6 @@ int[] GetRandomArray(int length, int minValue, int maxValue)
 
 int Diff(int[] array)
 {
-	int result = 0;
     int min = array[0];
     int max = array[0];
 
@@ -46,10 +45,14 @@ int Diff(int[] array)
         if (array[i] < min) 
         {
             min = array[i];
-        }else{
+        }
+		
+		if (array[i] > max) {
             max = array[i];
-        } 
-    } return result = max - min;
+		}
+	}
+
+	return max - min;
 }
 
 // добавляем функцию вывода на экран
