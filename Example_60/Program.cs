@@ -9,13 +9,17 @@ int c = Convert.ToInt32(Console.ReadLine()); // преобразование ч�
 
 int[,,] array = new int[a, b, c];
 
+
+int fillNumber = 10; 
 for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
         for (int k = 0; k < array.GetLength(2); k++)
         {
-            array[i, j, k] = Convert.ToInt16(new Random().Next(1,99));
+            //array[i, j, k] = Convert.ToInt16(new Random().Next(1,99));
+            array[i, j, k] = fillNumber;
+            fillNumber++;
         }
     }
 }
